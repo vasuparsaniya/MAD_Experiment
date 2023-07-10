@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+<!--    <androidx.cardview.widget.CardView-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/duedatepicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Due Date"
+                android:textSize="20dp"
+                android:paddingRight="60dp"
+                android:paddingLeft="60dp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:background="@color/white"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/todaydate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today Date: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orintation="horizontal">
+
+        <Button
+            android:id="@+id/penaltybtn"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:text="Check Penalty"
+            android:gravity="center"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/penalty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Penelty"
+            android:visibility="gone"
+            android:layout_mrginTop="30dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>

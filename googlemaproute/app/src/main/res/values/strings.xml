@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GoogleMapRoute</string>
+    <string name="title_activity_maps">GoogleMapRoutes</string>
+</resources>

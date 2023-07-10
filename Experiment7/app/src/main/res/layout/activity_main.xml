@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/img">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="SQL Lite Curd App"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/textId"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:fontFamily="cursive"
+        android:hint="Id"
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@id/textView" />
+    <EditText
+        android:id="@+id/textName"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:fontFamily="cursive"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@id/textId"/>
+
+    <EditText
+        android:id="@+id/textContact"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:fontFamily="cursive"
+        android:hint="Enter Contact"
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@id/textName" />
+
+    <EditText
+        android:id="@+id/textEn"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:fontFamily="cursive"
+        android:hint="Enter Enrollment Number"
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@id/textContact"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textEn">
+        <Button
+            android:id="@+id/buttonInsert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight=".33"
+            android:background="@drawable/button_bg"
+            android:textColor="@color/white"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight=".33"
+            android:background="@drawable/button_bg"
+            android:textColor="@color/white"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight=".33"
+            android:background="@drawable/button_bg"
+            android:textColor="@color/white"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/buttonView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight=".33"
+            android:background="@drawable/button_bg"
+            android:textColor="@color/white"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

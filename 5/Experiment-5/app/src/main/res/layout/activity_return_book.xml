@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReturnBook"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RETURN BOOK"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="25dp"/>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Book ID"
+                    android:inputType="number"
+                    android:id="@+id/editBid4"/>
+
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Card No."
+                    android:inputType="number"
+                    android:id="@+id/editCardNo2"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/returnButton"
+                android:layout_marginTop="20dp"
+                android:text="RETURN"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="true"/>
+
+
+        </LinearLayout>
+</RelativeLayout>
